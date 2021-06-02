@@ -142,6 +142,19 @@ a:active {
   height: 3.2rem;
 }
 
+.header span {
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 2rem;
+}
+
+.header p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: var(--font-weight-regular);
+  margin: 0;
+}
+
 /* Menu line*/
 
 .header-container .menu-icon {
@@ -228,18 +241,6 @@ a:active {
   margin:0;
 }
 
-.header span {
-  font-size: 1.6rem;
-  font-weight: var(--font-weight-bold);
-  line-height: 2rem;
-}
-
-.header p {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  font-weight: var(--font-weight-regular);
-  margin: 0;
-}
 .hero button {
   margin: 4rem auto 6.5rem;
   filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
