@@ -225,11 +225,11 @@ a:active {
 
 /*** 3. SECTIONS ***/
 
-/* Header / Hero
-    ============================== */
+/* Hero
+  ============================== */
 
 .hero {
-  padding-top: 33rem;
+  padding-top: 31rem;
   max-width: var(--section-width);
   text-align: center;
   margin: 0 auto;
