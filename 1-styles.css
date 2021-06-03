@@ -398,7 +398,7 @@ a:active {
 
 @media screen and (max-width: 768px) {
   :root {
-    --do-separation: 65px;
+    --article-separation: 65px;
   }
   .what-we-do .main-article {
     flex-wrap: wrap;
@@ -411,18 +411,18 @@ a:active {
 
   .a-1 {
     padding-bottom: 96px;
-    padding-right: var(--do-separation);
+    padding-right: var(--article-separation);
   }
   .a-2 {
-    padding-left: var(--do-separation);
+    padding-left: var(--article-separation);
     padding-right: 0px;
     padding-bottom: 96px;
   }
   .a-3 {
-    padding-right: var(--do-separation);
+    padding-right: var(--article-separation);
   }
   .a-4 {
-    padding-left: var(--do-separation);
+    padding-left: var(--article-separation);
   }
 }
 @media screen and (max-width: 600px) {
