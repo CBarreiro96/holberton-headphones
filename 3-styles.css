@@ -1,0 +1,715 @@
+/* SUMMARY
+1. GLOBAL
+2. LAYOUT
+3. SECTION
+4. CARD
+*/
+
+
+/*** 1. GLOBAL ***/
+
+/* Reset / Normalize
+  ============================= */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+
+
+/* Variables
+    ============================= */
+:root {
+  --color-black: #071629;
+  --color-white: #ffffff;
+  --color-primary: #ff6565;
+
+  --text-color: var(--color-white);
+
+  --font-family-base: "Source Sans Pro", sans-serif;
+  --font-family-logo: "Spin-Cycle-OT", sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  --button-hover-opacity-active: 0.9;
+  --links-hover-active: #FF6565;
+  --content-max-width: 1000px;
+
+  --header-background-color: #071629;
+  --section-width: 637px;
+  --line-height: 2px;
+
+  /* Section Our Result */
+  --separation-pentagone: calc(76px / 2);
+
+  /* Section form */
+  --form-separation: calc(45px / 2);
+
+}
+
+/* Base
+      ============================= */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--text-color);
+  font-family: var(--font-family-base);
+}
+.button {
+  background-color: var(--color-primary);
+  color: var(--text-color);
+  outline: none;
+  border: 0;
+  border-radius: 2.2rem;
+  display: block;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.4rem;
+  width: 16.2rem;
+  height: 4.4rem;
+}
+
+.button:hover,
+.button:active {
+  opacity: var(--button-opacity-hover-active);
+}
+
+a:hover,
+a:active {
+  color: var(--link-color-hover-active);
+}
+
+/*** 2. LAYOUT ***/
+
+/* Layout
+      ============================= */
+
+.container {
+    max-width: var(--content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navbar
+  ============================= */
+
+.nav {
+  list-style: none;
+  display: flex;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  font-style: normal;
+}
+
+.nav-item {
+  margin: 0 4.1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav-link:hover {
+  color: var(--links-hover-active);
+}
+
+/* Header
+  ============================= */
+
+.header {
+  background-image: url(./images/headphones_hero_1.jpg);
+  background-color: var(--header-background-color);
+  max-width: 100%;
+  height: 80rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.776rem;
+}
+
+.header-logo .img-logo {
+  width: 16.1rem;
+  height: 3.2rem;
+}
+
+.header span {
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 2rem;
+}
+
+.header p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: var(--font-weight-regular);
+  margin: 0;
+}
+
+/* Menu line*/
+
+.header-container .menu-icon {
+  cursor: pointer;
+  position: absolute;
+  user-select: none;
+  height: 0.2rem;
+  top: 4.3rem;
+}
+
+.navicon {
+  display: block;
+  width: 1.3rem;
+  height: 0.2rem;
+  background: var(--color-white);
+  border-radius: 0.2px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-icon .navicon::before,
+.menu-icon .navicon::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 100%;
+  position: absolute;
+  background: var(--color-white);
+  transition: all 0.2s ease-out;
+  border-radius: 0.2rem;
+}
+
+.menu-icon .navicon::before {
+  width: 18px;
+}
+
+.menu-icon .navicon::before {
+  top: calc(4px + var(--line-height));
+}
+.menu-icon .navicon::after {
+  top: calc(-4px - var(--line-height));
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .navbar-menu {
+  display: block;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon::before {
+  transform: rotate(-45deg);
+  width: 2rem;
+  top: 0;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  width: 0;
+}
+
+
+/*** 3. SECTIONS ***/
+
+/* Hero
+    ============================== */
+
+.hero {
+  padding-top: 31rem;
+  max-width: var(--section-width);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: var(--font-weight-bold);
+  margin:0;
+}
+
+.hero button {
+  margin: 4rem auto 6.5rem;
+  filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+}
+
+/*** @MEDIA HEADER***/
+
+@media screen and (min-width: 769px) and (max-width: 1060px) {
+  .container {
+    max-width: 85vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 82.4vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    background-image: linear-gradient(to bottom,rgba(245, 246, 252, 0),rgba(7, 22, 41, 1)),url(images/headphones_hero_1.jpg);
+    background-position: 35%;
+    background-position-y: -4rem;
+    background-size: cover;
+  }
+  .container {
+    max-width: 400px;
+  }
+  .menu-icon {
+    display: block;
+    top: 4rem;
+    left: 0;
+  }
+  .header-container {
+    flex-direction: column;
+    position: relative;
+    padding-top: 29px;
+    left: 0;
+    width: 100%;
+    margin-left: 1.6rem;
+  }
+
+  .header-logo {
+    margin: 0 auto;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .nav {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    font-size: 0.85rem;
+  }
+  .nav-item {
+    margin: initial;
+    margin: 35px;
+  }
+  .hero {
+    padding-top: 266px;
+    padding-bottom: 106px;
+  }
+  .hero span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero .button {
+    margin-top: 5rem;
+    margin-bottom: 6.5rem;
+  }
+  .hero p {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .header-container {
+    margin-left: 1.6rem;
+  }
+  .container {
+    max-width: 95.4vw;
+  }
+  .hero span {
+    padding: 0 3.7rem;
+  }
+  .hero .button {
+    margin-top: 20px;
+  }
+}
+
+/* Section (all styles)
+  ============================= */
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--section-width);
+  margin: 110px auto 97px;
+  line-height: 2.6rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.section-header h2 {
+  font-size: 3.2rem;
+}
+
+.main-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+/* SECTION What we do
+  ============================== */
+
+.what-we-do {
+  color: var(--color-black);
+}
+
+.what-we-do .main-article {
+  margin-bottom: 11rem;
+  max-width: 100.2rem;
+  height: auto;
+}
+
+.article h3 {
+  font-size: 1.8rem;
+}
+
+.article p {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+
+.a-2 {
+  padding-right: 58px;
+  padding-left: 58px;
+}
+.a-3 {
+  padding-right: 58px;
+}
+
+.icon {
+  font-size: 6em;
+  color: var(--links-hover-active);
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --article-separation: 65px;
+  }
+  .what-we-do .main-article {
+    flex-wrap: wrap;
+    max-width: 472px;
+    margin: 0 auto 110px auto;
+  }
+  .article {
+    max-width: 230px;
+  }
+
+  .a-1 {
+    padding-bottom: 96px;
+    padding-right: var(--article-separation);
+  }
+  .a-2 {
+    padding-left: var(--article-separation);
+    padding-right: 0px;
+    padding-bottom: 96px;
+  }
+  .a-3 {
+    padding-right: var(--article-separation);
+  }
+  .a-4 {
+    padding-left: var(--article-separation);
+  }
+}
+@media screen and (max-width: 600px) {
+  .a-1,
+  .a-2,
+  .a-3,
+  .a-4 {
+    padding: 0 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .what-we-do .section-header {
+    max-width: 325px;
+    margin-bottom: 110px;
+  }
+  .a-1,
+  .a-2,
+  .a-3,
+  .a-4 {
+    padding: 0;
+  }
+
+  .a-2,
+  .a-3,
+  .a-4 {
+    padding-top: 96px;
+  }
+}
+
+/* SECTION Our Results
+  ============================== */
+
+.our-result {
+  background-image: url(./images/headphones_hero_2.jpg);
+  background-color: var(--header-background-color);
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 11rem;
+  margin-top: 0;
+}
+
+.our-result .section-header {
+  margin-bottom: 56px;
+}
+
+.section-header h2 {
+  line-height: 3.7rem;
+  margin-bottom: 4rem;
+}
+
+.our-result .section-header p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.our-result img {
+  max-width: 100%;
+  height: auto;
+}
+.our-result .main-article {
+  padding-bottom: 79px;
+}
+
+.our-result .main-article .a-1,
+.our-result .main-article .a-2,
+.our-result .main-article .a-3,
+.our-result .main-article .a-4 {
+  position: relative;
+}
+.our-result .main-article .result-text {
+  position: absolute;
+  width: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.our-result .main-article h3 {
+  font-size: 46px;
+  line-height: 26px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.our-result .main-article p {
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.our-result .a-1 {
+  padding-right: 0;
+  margin-right: var(--separation-pentagone);
+}
+.our-result .a-2 {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: var(--separation-pentagone);
+  margin-right: var(--separation-pentagone);
+}
+.our-result .a-3 {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: var(--separation-pentagone);
+  margin-right: var(--separation-pentagone);
+}
+.our-result .a-4 {
+  margin-left: var(--separation-pentagone);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (max-width: 1010px) {
+  :root {
+    --separation-pentagones: calc(12px / 2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --separation-pentagones: calc(76px / 2);
+  }
+  .our-result {
+    background-size: cover;
+    background-position-y: -95px;
+    background-position-x: -380px;
+  }
+
+  .our-result .section-header {
+    margin-bottom: 76px;
+  }
+  .our-result img {
+    max-width: 190px;
+  }
+
+  .our-result .a-1 {
+    padding: 0;
+    margin: 0;
+    margin-right: var(--separation-pentagones);
+    margin-bottom: 42px;
+  }
+  .our-result .a-2 {
+    padding: 0;
+    margin: 0;
+    margin-left: var(--separation-pentagones);
+    margin-bottom: 42px;
+  }
+  .our-result .a-3 {
+    padding: 0;
+    margin: 0;
+    margin-right: var(--separation-pentagones);
+  }
+  .our-result .a-4 {
+    padding: 0;
+    margin: 0;
+    margin-left: var(--separation-pentagones);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .our-result img {
+    max-width: 160px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .our-result {
+    background-size: initial;
+    background-position-y: -70px;
+    background-position-x: -505px;
+  }
+
+  .our-result .section-header {
+    max-width: 305px;
+  }
+  .our-result .section-header h2 {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .our-result .main-article {
+    max-width: 190px;
+  }
+  .our-result img {
+    max-width: 190px;
+  }
+  .our-result .a-1 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 42px;
+  }
+  .our-result .a-2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 42px;
+  }
+  .our-result .a-3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 42px;
+  }
+  .our-result .a-4 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* SECTION Contact us
+  ============================== */
+.contact-us {
+  color: var(--color-black);
+  padding-top: 11rem;
+  top: 0;
+  padding-bottom: 13rem;
+}
+
+.contact-us h2 {
+  margin: 0;
+  font-size: 3.2rem;
+}
+
+.contact-us .section-header {
+  margin-bottom: 5.6rem;
+}
+
+.contact-us .main-article {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field {
+  border: 0;
+  border-bottom: 1px solid #d4d7da;
+  width: 33.5rem;
+  padding-bottom: 1rem;
+}
+
+.form-field::placeholder {
+  color: var(--color-black);
+  line-height: 1.6rem;
+  padding-bottom: 1rem;
+}
+.name {
+  margin-bottom: var(--form-separation);
+}
+
+.email {
+  margin-bottom: var(--form-separation);
+  margin-top: var(--form-separation);
+}
+
+.message {
+  margin-bottom: var(--form-separation);
+  margin-top: var(--form-separation);
+}
+
+.form-help {
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 360ms ease-in-out;
+}
+
+.name:focus + .form-help {
+  max-height: 2.5rem;
+}
+
+.email:focus + .form-help {
+  max-height: 2.5rem;
+}
+
+.message:focus + .form-help {
+  max-height: 2.5rem;
+}
+
+.contact-us .form-submit {
+  margin-top: calc(56px - var(--form-separation));
+}
+
+
