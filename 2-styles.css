@@ -110,7 +110,7 @@ a:active {
 }
 
 .nav-item {
-  margin: 0 4.1rem;
+  margin-left: 4.1rem;
 }
 
 .nav-link {
@@ -361,7 +361,10 @@ a:active {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 110px;
+  max-width: 1002px;
   font-size: 1.6rem;
+  height: auto;
 }
 
 /* SECTION What we do
@@ -369,12 +372,6 @@ a:active {
 
 .what-we-do {
   color: var(--color-black);
-}
-
-.what-we-do .main-article {
-  margin-bottom: 11rem;
-  max-width: 100.2rem;
-  height: auto;
 }
 
 .article h3 {
@@ -403,7 +400,7 @@ a:active {
   :root {
     --article-separation: 65px;
   }
-  .what-we-do .main-article {
+  .main-article {
     flex-wrap: wrap;
     max-width: 472px;
     margin: 0 auto 110px auto;
@@ -438,6 +435,9 @@ a:active {
 }
 
 @media screen and (max-width: 480px) {
+  .section-header {
+    max-width: 3.25rem;
+  }
   .what-we-do .section-header {
     max-width: 325px;
     margin-bottom: 110px;
@@ -597,7 +597,7 @@ a:active {
 @media screen and (max-width: 480px) {
   .our-result {
     background-size: initial;
-    background-position-y: -70px;
+    background-position-y: -80px;
     background-position-x: -505px;
   }
 

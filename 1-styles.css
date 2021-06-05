@@ -107,7 +107,7 @@ a:active {
 }
 
 .nav-item {
-  margin: 0 4.1rem;
+  margin-left: 4.1rem;
 }
 
 .nav-link {
@@ -400,7 +400,7 @@ a:active {
   :root {
     --article-separation: 65px;
   }
-  .what-we-do .main-article {
+  .main-article {
     flex-wrap: wrap;
     max-width: 472px;
     margin: 0 auto 110px auto;

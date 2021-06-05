@@ -113,7 +113,7 @@ a:active {
 }
 
 .nav-item {
-  margin: 0 4.1rem;
+  margin-left: 4.1rem;
 }
 
 .nav-link {
@@ -161,7 +161,7 @@ a:active {
   margin: 0;
 }
 
-/* Menu line*/
+/* Menu line Hamburguer*/
 
 .header-container .menu-icon {
   cursor: pointer;
@@ -406,7 +406,7 @@ a:active {
   :root {
     --article-separation: 65px;
   }
-  .what-we-do .main-article {
+  .main-article {
     flex-wrap: wrap;
     max-width: 472px;
     margin: 0 auto 110px auto;
@@ -441,6 +441,9 @@ a:active {
 }
 
 @media screen and (max-width: 480px) {
+  .section-header {
+    max-width: 3.25rem;
+  }
   .what-we-do .section-header {
     max-width: 325px;
     margin-bottom: 110px;
