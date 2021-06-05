@@ -36,142 +36,108 @@ The designs were planned for Desktop, Tablet, and Mobile, so the web page was im
 - you are not allowed to import external CSS framework (like Bootstrap)
 - you are not to use Javascript
 
-## :books: Tasks
+# Sections
+
+The Holberton Headphones web page was developed by sections. These can be previewed in the next links thanks to the help of htmlpreview.github.io.
+
+In order to have a correct preview experience, you must make sure your computer contains certain fonts, [source-sans-pro](https://intranet.hbtn.io/rltoken/wltHny-KZP3B8JFRvpmVjA "source-sans-pro") and [Spin-Cycle-OT](https://intranet.hbtn.io/rltoken/Qb96K4nTPQJO1paP_OBELw "Spin-Cycle-OT")
+
+All of the sections contain the respective code in order to support responsiveness to the sizes mentioned at the beginning.
+
+<div align="center">
+    <table>
+        <tr align="center">
+            <td><b> Section </b></td>
+            <td> <b>FIle</b></td>
+        </tr>
+        <tr align="center">
+            <td>Header - Hero </td>
+            <td>
+                <ul>
+                    <li>0-index.html</li>
+                    <li>0-styles.css</li>
+                </ul>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>"What we do..."</td>
+            <td>
+                <ul>
+                    <li>1-index.html</li>
+                    <li>1-styles.css</li>
+                </ul>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>"Our results"</td>
+            <td>
+                <ul>
+                    <li>2-index.html</li>
+                    <li>2-styles.css</li>
+                </ul>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>Contact us</td>
+            <td>
+                <ul>
+                    <li>3-index.html</li>
+                    <li>3.styles.css</li>
+                </ul>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>Footer</td>
+            <td>
+                <ul>
+                    <li>4-index.html</li>
+                    <li>4-styles.css</li>
+                </ul>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>No Imgs, only Pure HTML/CSS for "Our results" section</td>
+            <td>
+                <ul>
+                    <li>100-index.html</li>
+                    <li>100-styles.css</li>
+                </ul>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>Animations added for "What we do" and "Our results" sections</td>
+            <td>
+                <ul>
+                    <li>101-index.html</li>
+                    <li>101-styles.css</li>
+                </ul>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>SASS Version</td>
+            <td>
+                <ul>
+                    <li>102-index.html</li>
+                    <li>102-styles.scss</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+
+## Accessibility
+
+Besides the responsiveness of the site, the web page was also coded to be as accessible as possible.
+
+This resulted in the only problem of this area to be the contrast of the site, which at the moment can not be changed for design reasons.
+
+Besides this, there are no other issues as shown by an Axe analysis in the browser. This means all aria labels and content presentation considerations were taken into account in the HTML layout.
+
+<div align="center"><img src="https://user-images.githubusercontent.com/66263776/120895841-6dc87080-c5e4-11eb-91a6-4c505429c161.png" width="700" height= "400"> </div>
+<br>
+<br>
+<div align="center"><img src="https://user-images.githubusercontent.com/66263776/120895897-a8320d80-c5e4-11eb-8843-5d6fd47f24a6.png" width="400" height= "100"> </div>
 
-**0. Read and be familiar with Figma**
+# Author:
 
-Create an account in Figma and open this project and �Duplicate to your Drafts� to have access to all design details.
-
-If you can�t access to it, please find here the [Figma file](https://www.figma.com/file/gkWRcFqkwtruWZgSfnnHF0/Holberton-School---Headphone-company?node-id=0%3A2)
-
-![](Tasks/images/pic1.png)
-
-Important notes with Figma:
-
-- if your computer doesn�t have missing fonts, you can find them here: [source-sans-pro](https://www.fontsquirrel.com/fonts/source-sans-pro) and [Spin-Cycle-OT](https://www.fontsquirrel.com/fonts/Spin-Cycle-OT)
-- some values are in float - feel free to round them
-
-For this task, please write an amazing README.md
-
-### Interactions note:
-
-- the web page must switch to the mobile version when the screen width is 480px or less
-- links hover/active: #FF6565
-- button hover/active: opacity: 0.9
-- max width of the content: 1000px centered in the page
-
-
-**1. Header**
-
-Files: [0-index.html](Tasks/0-index.html/) - [0-styles.css](Tasks/0-styles.css/)
-
-Building a web page the right way, is not easy - expect if you put in place strong foundations:
-
-- reset CSS styling
-- use variables
-- simple/�as generic as you can� CSS selectors
-- avoid as more as you can super specific CSS selector
-- simple HTML structure - div containers are your friend!
-
-Last advice: I always start to build a web page from outside to inside and from top to bottom.
-
-Now, your turn!
-
-For this first task: create the header/hero piece
-
-Here an archive of all assets needed: [images_0x09.zip](https://intranet.hbtn.io/rltoken/6AnXuu5fO78UpPRvkBX3cw)
-
-### Desktop
-
-![](Tasks/images/headerD.gif)
-
-
-### Mobile
-
-![](Tasks/images/headerM.gif)
-
-
-**2. "What we do..." section**
-
-Files: [1-index.html](Tasks/1-index.html/) - [1-styles.css](Tasks/1-styles.css/)
-
-Copy files from the previous task.
-
-For this second task: create the �What we do�� section
-
-In this section, you will need custom font icons. Here the archive of it: [holberton_school-icon.zip](https://intranet.hbtn.io/rltoken/UTLmru8XUpDXW2EbLdLyew) Inside you will find demo page of how to use it.
-
-Important: try to build as generic as you can� you will probably need some components in next section.
-
-
-**3. "Our results" section**
-
-Files: [2-index.html](Tasks/2-index.html/) - [2-styles.css](Tasks/2-styles.css/)
-
-Copy files from the previous task.
-
-For this third task: create the �Our results� section
-
-Now you can reuse components form the previous task!
-
-
-**4. Contact us**
-
-Files: [3-index.html](Tasks/3-index.html/) - [3-styles.css](Tasks/3-styles.css/)
-
-Copy files from the previous task.
-
-A good landing page has always a contact form.
-
-You are free to add any animations and/or constraints on fields.
-
-
-**5. Footer**
-
-Files: [4-index.html](Tasks/4-index.html/) - [4-styles.css](Tasks/4-styles.css/)
-
-Copy files from the previous task.
-
-Last piece of the page� the Footer!
-
-When you are done, here the result:
-
-### Desktop:
-
-![](Tasks/images/footerD.gif)
-
-### Mobile:
-
-![](Tasks/images/footerM.gif)
-
-
-And you are done!
-
-Good job!
-
-
-**6. Replace image by... code!**
-
-Files: [100-index.html](Tasks/100-index.html/) - [100-styles.css](Tasks/100-styles.css/)
-
-In the section �Our results�, replace item background image by HTML and CSS only!�
-
-
-**7. Let's animate items**
-
-Files: [101-index.html](Tasks/101-index.html/) - [101-styles.css](Tasks/101-styles.css/)
-
-From 4-index.html and 4-styles.css, add fun animations to �What we do�� and �Our results� sections items row. Either all the time, either when hover.
-
-Scaling, opacity, rotation, bouncing� many options!
-
-
-**8. And SASS??**
-
-Files: [102-styles.css](Tasks/102-styles.css/)
-
-Take your 101-styles.css file and create a 102-styles.scss that will be the SASS version of it.
-
-```sh
-$ sass 102-styles.scss > 101-styles.css
-```
+Camilo Barreiro: [CBarreiro96](https://github.com/CBarreiro96)
