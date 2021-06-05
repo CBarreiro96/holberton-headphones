@@ -60,6 +60,7 @@ body {
   color: var(--text-color);
   font-family: var(--font-family-base);
 }
+
 .button {
   background-color: var(--color-primary);
   color: var(--text-color);
@@ -107,7 +108,7 @@ a:active {
 }
 
 .nav-item {
-  margin: 0 4.1rem;
+  margin-left: 4.1rem;
 }
 
 .nav-link {
