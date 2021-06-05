@@ -4,15 +4,15 @@
 
 ## :orange_book: Expected to Look at this Concept
 
-In this project, you will implement from scratch, without any library, a web page. You will use all HTML/CSS/Accessibility/Responsive design knowledges that you learned previously.
+This web page was coded from scratch based on some design models given on [Figma](https://www.figma.com/file/gkWRcFqkwtruWZgSfnnHF0/Holberton-School---Headphone-company)
 
-You won�t have a lot of instruction, you are free to implement it the way that you want - the objective is simple: Have a fully functional web page that looks the same as the designer file.
+The designs were planned for Desktop, Tablet, and Mobile, so the web page was implemented with responsiveness to different device sizes.
 
-Here the final result:
+<div align="center">
 
-![](Tasks/images/concept.jpg)
+</div>
 
-This webpage has been designed by Nicolas Philippot, UI/UX designer.
+
 
 ## Requirements
 
