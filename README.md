@@ -9,7 +9,24 @@ This web page was coded from scratch based on some design models given on [Figma
 The designs were planned for Desktop, Tablet, and Mobile, so the web page was implemented with responsiveness to different device sizes.
 
 <div align="center">
-
+    <table>
+        <tr align="center">
+            <td> <b>Desktop (Width: 1400 px)</b>  </td>
+            <td> <b>Tablet (Width: 760 px)</b> </td>
+            <td> <b>Mobile (Width: 480 px)</b> </td>
+        <tr>
+        <tr align="center">
+            <td>
+                <img src="https://camo.githubusercontent.com/3ce2a43acc1b973359af75e49770aeb63ccee5d3feecd636b53fc39811ef401c/68747470733a2f2f692e6962622e636f2f3172346b3057432f30312d6865616470686f6e65732d6465736b746f702d32782e706e67" height="646">
+            </td>
+            <td>
+                <img src="https://camo.githubusercontent.com/d2cb11b5e486418b7b1acf51a329a130b2f07442316d1ee3ad204fe93f11e1e0/68747470733a2f2f692e6962622e636f2f593246664836772f30322d6865616470686f6e65732d7461626c65742d32782e706e67">
+            </td>
+            <td>
+                <img src="https://camo.githubusercontent.com/616990609d12d078dac068c7ba678dc9ca315410e7af04dae5c03d1a23be2a6c/68747470733a2f2f692e6962622e636f2f73317a78354e532f30332d6865616470686f6e65732d6d6f62696c652d32782e706e67">
+            </td>
+        </tr>
+    </table>
 </div>
 
 
