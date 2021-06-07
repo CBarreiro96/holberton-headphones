@@ -194,10 +194,10 @@ a:active {
 }
 
 .menu-icon .navicon::before {
-  top: calc(4px + var(--hambuger-line-height));
+  top: calc(4px + var(--line-height));
 }
 .menu-icon .navicon::after {
-  top: calc(-4px - var(--hambuger-line-height));
+  top: calc(-4px - var(--line-height));
 }
 
 .menu-btn {
